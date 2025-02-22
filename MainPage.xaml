@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Burhan_Zazi_A1.MainPage"
@@ -23,7 +23,7 @@
                VerticalOptions="CenterAndExpand" />
 
         <!-- Input for User Guess -->
-        <Entry x:Name="UserGuess"
+        <Entry x:Name="UserGuessEntry"
                Placeholder="Guess the Word!"
                FontSize="18"
                TextColor="Black"
@@ -36,15 +36,16 @@
                 BackgroundColor="LightGreen"
                 TextColor="Black"
                 HorizontalOptions="Center" />
+        <Label x:Name="FooterLabel"
+          Text="Created by Burhan Zazi"
+          FontSize="16"
+          TextColor="Black"
+          HorizontalOptions="Center"
+          VerticalOptions="EndAndExpand"
+          Padding="10" />
 
     </StackLayout>
 
     <!-- Footer with your name -->
-    <Label x:Name="FooterLabel"
-           Text="Created by FirstName LastName"
-           FontSize="16"
-           TextColor="Black"
-           HorizontalOptions="Center"
-           VerticalOptions="EndAndExpand"
-           Padding="10" />
 </ContentPage>
+
